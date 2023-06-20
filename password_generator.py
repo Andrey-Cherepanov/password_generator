@@ -2,6 +2,10 @@ import random
 import string
 
 def password_generator(min_length, numbers=True, special_characters=True):
+    """Generate a string password with length between min_length and min_length +10
+        If numbers than password will contain at least one digit
+        If special_characters than password will contain at least one puctuation character"""
+
     letters = string.ascii_letters
     digits = string.digits
     special = string.punctuation
